@@ -1,5 +1,8 @@
+<h1>{{title}}</h1>
 <div class="container">
-	<div class="row match" *ngFor='let event of eventsList'>
+	<div *ngFor='let event of eventsList'
+		 class="row match"
+		 [routerLink]="['/registerEvent', event.id]">
 		<div class="col-xs-3">
 			<img [src]="event.path"
 				 [alt]="event.host"
