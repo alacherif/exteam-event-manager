@@ -1,20 +1,5 @@
 <div class="container">
-	<div class="row match" *ngFor='let event of eventsList'>
-		<div class="col-xs-3">
-			<img [src]="event.path"
-				 [alt]="event.host"
-				 class="img-responsive">
-		</div>
-		<div class="col-xs-6">
-			<p class="text-center mtopbot">
-				Date : {{event.date | date}} <br>
-				Nombre de place : {{event.nbrePlaces}} 
-			</p>
-		</div>
-		<div class="col-xs-3">
-			<img [src]="event.path"
-				 [alt]="event.guest"
-				 class="img-responsive">
-		</div>
-	</div>
+	<event-component *ngFor='let event-object of eventsList' >
+		{{event-object}}
+	</event-component>
 </div>

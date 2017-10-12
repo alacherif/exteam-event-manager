@@ -1,0 +1,19 @@
+<div class="row match" >
+    <div class="col-xs-3">
+        <img [src]="[host].path"
+             [alt]="[host].name"
+             class="img-responsive">
+    </div>
+    <div class="col-xs-6">
+        <p class="text-center mtopbot">
+            <span>Date : {{date | date}}</span>  
+            <span>Nombre de place : {{nbrePlaces}}</span>
+            <span>Nombre de reservation : {{NbreResa}}</span>
+        </p>
+    </div>
+    <div class="col-xs-3">
+        <img [src]="[guest].path"
+             [alt]="[guest].name"
+             class="img-responsive">
+    </div>
+</div>
