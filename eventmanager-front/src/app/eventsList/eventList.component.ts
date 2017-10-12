@@ -1,6 +1,9 @@
 import { Component, Input } from '@angular/core';
 
 import { EventComponent } from '../shared/event/event.component';
+import { EventObj } from '../shared/event/EventObj';
+
+
 
 @Component({
   selector: 'events-list',
@@ -8,7 +11,7 @@ import { EventComponent } from '../shared/event/event.component';
   styleUrls: ['./eventList.component.css']
 })
 export class EventsListComponent {
-	@Input() eventsList: EventComponent[] = [
+ eventsList: EventObj[] = [
 			{
 				"id": "59df3f6679659c292e195328",
 				"host": {

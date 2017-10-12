@@ -1,5 +1,4 @@
 <div class="container">
-	<event-component *ngFor='let event-object of eventsList' >
-		{{event-object}}
+	<event-component *ngFor='let eo of eventsList' [eventObj]='eo'>
 	</event-component>
 </div>

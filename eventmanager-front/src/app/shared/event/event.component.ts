@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 import {ITeam} from '../team'
+import { EventObj } from './EventObj';
+
 
 @Component({
     selector : 'event-component',
@@ -8,10 +10,6 @@ import {ITeam} from '../team'
     styleUrls :  ['./event.component.css']
 })
 export class EventComponent{
-    id : string;
-    date:string;
-    nbrePlaces : number;
-    nbreResa : number;
-    host :ITeam;
-    guest : ITeam ; 
+    @Input('eventObj') data: EventObj;
 }
+
