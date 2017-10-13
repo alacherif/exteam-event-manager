@@ -1,6 +1,6 @@
 import { Component,Input } from '@angular/core';
 
-import {ITeam} from '../team'
+import { ITeam } from '../team'
 import { EventObj } from './EventObj';
 
 @Component({
