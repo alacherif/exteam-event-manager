@@ -1,6 +1,5 @@
 import { ITeam } from "../team";
 
-
 export class EventObj{
     public id : string;
     public date: string;
@@ -8,6 +7,4 @@ export class EventObj{
     public nbreResa : number;
     public guest :ITeam;
     public host :ITeam;
-
-
 }
