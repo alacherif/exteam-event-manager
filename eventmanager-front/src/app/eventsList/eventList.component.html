@@ -1,23 +1,5 @@
 <h1>{{title}}</h1>
 <div class="container">
-	<div *ngFor='let event of eventsList'
-		 class="row match"
-		 [routerLink]="['/registerEvent', event.id]">
-		<div class="col-xs-3">
-			<img [src]="event.path"
-				 [alt]="event.host"
-				 class="img-responsive">
-		</div>
-		<div class="col-xs-6">
-			<p class="text-center mtopbot">
-				Date : {{event.date | date}} <br>
-				Nombre de place : {{event.nbrePlaces}} 
-			</p>
-		</div>
-		<div class="col-xs-3">
-			<img [src]="event.path"
-				 [alt]="event.guest"
-				 class="img-responsive">
-		</div>
-	</div>
+	<event-component *ngFor='let eo of eventsList' [eventObj]='eo'>
+	</event-component>
 </div>

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { EventsListComponent } from './eventsList/eventList.component';
+import {EventComponent } from './shared/event/event.component';
 import { RegisterEventComponent } from './forms/registerEvent.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -10,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     EventsListComponent,
+    EventComponent,
     RegisterEventComponent
   ],
   imports: [
