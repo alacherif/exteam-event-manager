@@ -1,4 +1,3 @@
-
 import { Component, OnInit, Input } from '@angular/core';
 
 import { EventObj } from '../shared/event/EventObj';
