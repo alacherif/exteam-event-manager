@@ -1,7 +1,4 @@
-.match{border:2px solid gray;display:flex;align-items: center;padding: 10px;margin-bottom: 10px;cursor: pointer;}
-.mtopbot{margin-top:1em;margin-bottom: 1em}
-.match .img-responsive{max-width: 150px;max-height:150px;display: block;margin: 0 auto}
-@media all and (max-width: 767px){
-	.match{display: block!important}
-	.match .img-responsive{max-height: 50px;max-width: 50px}
+h1.title{
+	  color:#004b70;
+	  margin-bottom: 20px;
 }
