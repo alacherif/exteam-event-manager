@@ -4,10 +4,9 @@ import { EventObj } from '../shared/event/EventObj';
 import { EventService } from '../services/event.service';
 
 @Component({
-  selector: 'events-list',
-  templateUrl: './eventList.component.html',
-	styleUrls: ['./eventList.component.css'],
-	providers: [EventService]
+	selector: 'events-list',
+	templateUrl: './eventList.component.html',
+	styleUrls: ['./eventList.component.css']
 })
 export class EventsListComponent implements OnInit{
 	title = 'Liste des Matches';
