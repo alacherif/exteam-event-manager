@@ -1,6 +1,6 @@
 <div class="row match"
-    [routerLink] ="['/registerEvent',data.id]">
-    <div class="col-xs-3">
+    [routerLink] ="['/'+ routerLinkValue,data.id]">
+    <div class="col-xs-3" >
         <img [src]="data.host.path"
              [alt]="data.host.name"
              class="img-responsive">
@@ -9,7 +9,7 @@
         <p class="text-center mtopbot">
             <span>Date : {{data.date | date}}</span>  
             <span>Nombre de place : {{data.nbrePlaces}}</span>
-            <span>Nombre de reservation : {{data.nbreResa}}</span>
+            <span *ngIf="isBackOffice">Nombre de reservation : {{data.nbreResa}}</span>
         </p>
     </div>
     <div class="col-xs-3">

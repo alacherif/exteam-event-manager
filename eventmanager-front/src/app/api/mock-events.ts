@@ -30,7 +30,7 @@ export const EVENTS: EventObj[] = [
       'path': 'http://placehold.it/32x32'
     },
     'nbrePlaces': 4,
-    'nbreResa': 3,
+    'nbreResa': 1,
     'date': 'Thu Apr 05 1973 09:36:32 GMT+0200 (Paris, Madrid (heure d’été))'
   },
   {
@@ -46,7 +46,7 @@ export const EVENTS: EventObj[] = [
       'path': 'http://placehold.it/32x32'
     },
     'nbrePlaces': 4,
-    'nbreResa': 3,
+    'nbreResa': 2,
     'date': 'Mon May 31 1976 04:31:07 GMT+0200 (Paris, Madrid (heure d’été))'
   },
   {
@@ -78,7 +78,7 @@ export const EVENTS: EventObj[] = [
       'path': 'http://placehold.it/32x32'
     },
     'nbrePlaces': 4,
-    'nbreResa': 3,
+    'nbreResa': 4,
     'date': 'Sat Apr 05 2014 04:18:05 GMT+0200 (Paris, Madrid (heure d’été))'
   }
 ];

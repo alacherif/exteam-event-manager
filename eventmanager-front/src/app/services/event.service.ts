@@ -15,4 +15,10 @@ export class EventService{
           setTimeout(() => resolve(this.getEvents()), 2000);
         });
     }
+
+    getEventById(id:string) : EventObj{
+        var result= EVENTS.find(ev=> ev.id === id);
+        //console.log(result);
+        return result;
+    }
 }
