@@ -10,7 +10,7 @@ import { EventObj } from '../shared/event/EventObj';
     providers : [EventService]
 })
 export class EditEventComponent{
-    formTitle: string = 'Modification de l'événement';
+    formTitle: string = 'Modification de l\'événement';
     eventModel: EventObj ;
 
     constructor(private eventService: EventService, private activatedRoute :ActivatedRoute){}
