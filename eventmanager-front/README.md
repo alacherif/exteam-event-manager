@@ -29,4 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Run local Server
 
 * Doc link :https://github.com/typicode/json-server 
-* change path to /your/path/to/api/data.json
+ Change path to /your/path/to/api/data.json
