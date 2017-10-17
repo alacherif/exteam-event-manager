@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { EventsListComponent } from './eventsList/eventList.component';
 import { RegisterEventComponent } from './forms/registerEvent.component';
-import { EventManagerComponent } from './forms/eventManager.component';
+import { EventManagerComponent } from './eventManager/eventManager.component';
 import { EditEventComponent } from './forms/editEvent.component';
 
 const routes: Routes = [

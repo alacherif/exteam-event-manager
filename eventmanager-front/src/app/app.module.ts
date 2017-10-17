@@ -11,7 +11,7 @@ import { EventComponent } from './shared/event/event.component';
 import { RegisterEventComponent } from './forms/registerEvent.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EventService } from './services/event.service';
-import { EventManagerComponent } from './forms/eventManager.component';
+import { EventManagerComponent } from './eventManager/eventManager.component';
 import { EditEventComponent } from './forms/editEvent.component';
 
 @NgModule({
