@@ -17,8 +17,7 @@ export class EventService{
     }
 
     getEventById(id:string) : EventObj{
-        var result= EVENTS.find(ev=> ev.id === id);
-        //console.log(result);
+        let result= EVENTS.find(ev=> ev.id === id);
         return result;
     }
 }
