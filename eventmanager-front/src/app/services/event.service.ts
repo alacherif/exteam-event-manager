@@ -1,33 +1,22 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Observable } from 'rxjs/Observable'; 
+import { HttpClient } from '@angular/common/http';
 
-import 'rxjs/add/operator/toPromise'; 
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/catch';
 
-import { EVENTS } from '../api/mock-events';
 import { EventObj } from '../shared/event/EventObj';
 
 @Injectable()
 export class EventService{
     private eventsUrl = 'http://localhost:3000/events';
+  
+    constructor(private http: HttpClient){}
 
-    constructor(private http: Http){}
-
-    getEvents(): Promise<EventObj[]>{
-        return Promise.resolve(EVENTS);
-    }
-
-    getEventsSlowly(): Promise<EventObj[]> {
-        return new Promise(resolve => {
-          // Simulate server latency with 2 second delay
-          setTimeout(() => resolve(this.getEvents()), 2000);
-        });
-    }
-
-    getHeroes(): Promise<EventObj[]> {
-        return this.http.get(this.eventsUrl)
-                    .toPromise()
-                    .then(response => {response.json().data as EventObj[];})
-                    .catch(this.handleError);
+    getEvents(): Observable<EventObj[]> {
+        return this.http.get<EventObj[]>(this.eventsUrl)
+            .do(data => JSON.stringify(data))
+            .catch(this.handleError);
     }
        
     private handleError(error: any): Promise<any> {
