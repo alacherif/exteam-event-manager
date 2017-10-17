@@ -18,7 +18,7 @@ export class EventComponent implements OnInit{
     
     ngOnInit() {
         this.isBackOffice = this.activatedRoute.snapshot.url[0].path === 'eventsList' ? false : true;
-        this.routerLinkValue =  this.isBackOffice ? 'editEvent' : 'registerEvent'
+        this.routerLinkValue =  this.isBackOffice ? 'editEvent' : 'registerEvent';
     }
 }
 
