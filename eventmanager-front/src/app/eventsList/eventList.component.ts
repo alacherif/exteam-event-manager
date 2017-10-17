@@ -15,8 +15,11 @@ export class EventsListComponent implements OnInit{
 	constructor(private eventService: EventService){}
 
 	getEvents(): void{
-		this.eventService.getEventsSlowly().then(events => this.eventsList = events);
-		//this.eventService.getEvents().then(events => this.eventsList = events);
+		this.eventService.getEvents()
+			.subscribe(
+				events => this.eventsList = events,
+				error => console.log(error)
+			);
 	}
 
 	ngOnInit(): void{
