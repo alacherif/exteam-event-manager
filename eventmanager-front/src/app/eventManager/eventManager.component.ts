@@ -8,14 +8,18 @@ import { EventService } from '../services/event.service';
     templateUrl: 'event-manager.component.html'
 })
 export class EventManagerComponent{
-    title : string = 'Gestions des événements'; 
+    title : string = 'Gestion des événements'; 
     eventsList: EventObj[];
 
     constructor(private eventService: EventService){}
     
     getEvents(): void{
-        this.eventService.getEventsSlowly().then(events => this.eventsList = events);
-    }
+		this.eventService.getEvents()
+			.subscribe(
+				events => this.eventsList = events,
+				error => console.log(error)
+			);
+	}
     
     ngOnInit(): void{
         this.getEvents();
