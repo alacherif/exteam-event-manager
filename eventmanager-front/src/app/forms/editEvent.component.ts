@@ -7,6 +7,7 @@ import { EventObj } from '../shared/event/EventObj';
 @Component({
     selector: 'edit-event',
     templateUrl: 'editEvent.component.html',
+    styleUrls: ['forms.component.css'],
     providers : [EventService]
 })
 export class EditEventComponent{

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule, MatFormFieldModule } from '@angular/material';
+import { MatInputModule, MatFormFieldModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule, MatButtonModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { EventsListComponent } from './eventsList/eventList.component';
@@ -30,7 +30,11 @@ import { EditEventComponent } from './forms/editEvent.component';
     MatFormFieldModule,
     MatInputModule,
     NoopAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatButtonModule
   ],
   providers: [EventService],
   bootstrap: [AppComponent]
