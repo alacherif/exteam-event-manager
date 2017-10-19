@@ -2,3 +2,27 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+
+.full-width{
+    width:100%;
+}
+#file { 
+    display: none; 
+}
+.nopadd{
+    padding-right: 0;
+    padding-left: 0;
+}
+label.mdl-button--file{
+    text-align: right;
+    margin-top: 5px;
+}
+.modal-body{
+    max-height: 350px;
+    overflow-y: scroll;
+}
+@media screen and (max-width: 767px){
+    .col-sm-11{
+        width: 95%;
+    }
+}
