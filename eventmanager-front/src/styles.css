@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+
+.full-width{
+    width:100%;
+}
+#file { 
+    display: none; 
+}
+.nopadd{
+    padding-right: 0;
+    padding-left: 0;
+}
+label.mdl-button--file{
+    text-align: right;
+    margin-top: 5px;
+}
+.modal-body{
+    max-height: 350px;
+    overflow-y: scroll;
+}
+input.ng-valid[required] {
+  border-left: 2px solid #42A948; /* green */
+}
+input.ng-invalid {
+  border-left: 2px solid #a94442; /* red */
+}
+@media screen and (max-width: 767px){
+    .col-sm-11{
+        width: 95%;
+    }
+}
