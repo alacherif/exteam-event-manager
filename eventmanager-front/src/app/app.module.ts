@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, 
@@ -18,6 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { EventService } from './services/event.service';
 import { EventManagerComponent } from './eventManager/eventManager.component';
 import { EditEventComponent } from './forms/editEvent.component';
+import { PhoneNumberDirective } from './shared/phonenumber.directive';
+import { AlphaDirective } from './shared/alphabetique.directive'
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { EditEventComponent } from './forms/editEvent.component';
     EventComponent,
     RegisterEventComponent,
     EventManagerComponent,
-    EditEventComponent
+    EditEventComponent,
+    PhoneNumberDirective,
+    AlphaDirective
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,7 @@ import { EditEventComponent } from './forms/editEvent.component';
     MatInputModule,
     NoopAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,

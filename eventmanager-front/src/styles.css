@@ -21,6 +21,12 @@ label.mdl-button--file{
     max-height: 350px;
     overflow-y: scroll;
 }
+input.ng-valid[required] {
+  border-left: 2px solid #42A948; /* green */
+}
+input.ng-invalid {
+  border-left: 2px solid #a94442; /* red */
+}
 @media screen and (max-width: 767px){
     .col-sm-11{
         width: 95%;
